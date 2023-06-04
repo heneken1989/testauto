@@ -3,19 +3,31 @@ pipeline {
       tools {
         maven 'maven-3.9.0'
     }
-    stages {
-        stage('Test') {
-            steps {
-                sh ('mvn test')
-            }
-        }
-    
-
-        stage('Report') {
-            steps {
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/karate-reports/', reportFiles: 'karate-timeline.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
-            }
+stages {
+    stage('Test Execution') {
+      steps {
         
+            script {
+                sh ("mvn test -DskipFailures=false -Dkarate.options='--tags @apiTest'")
+            }
+           
+      }
     }
+
+    stage('Upload report') {
+      steps {
+        
+            script {
+                publishHTML (target: [
+                    allowMissing: false, 
+                    keepAll: true,  
+                    reportDir: 'target/karate-reports/',
+                    reportFiles: 'karate-timeline.html',
+                    reportName: 'KarateDemo Report'])
+            }           
+      }
+    }
+
+  }
     
-}}
+}
