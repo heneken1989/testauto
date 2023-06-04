@@ -1,3 +1,4 @@
+
 Feature: create User API
 
   Background:
@@ -7,7 +8,7 @@ Feature: create User API
 
 
 
-
+@create
   Scenario: 1 create a user and then get it by id
     Given url baseUrl
     And path 'users'
