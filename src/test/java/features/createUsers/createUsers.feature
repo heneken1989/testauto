@@ -2,7 +2,7 @@
 Feature: create User API
 
   Background:
-    * def URL = 'https://jsonplaceholder.typicode.com/users'
+    * def URL = 'http://localhost/2208M0/ProjectGroup4/public/allproducts'
     * def requestData = read('classpath:resources/requests/createUsers.json')
     * def responeData = read('classpath:resources/respones/createUsers.json')
 
@@ -10,9 +10,9 @@ Feature: create User API
 
 @create
   Scenario: 1 create a user and then get it by id
-    Given url baseUrl
-    And path 'users'
+    Given url URL
+    # And path 'users'
     And request requestData.createUsersRequest
-    When method post
-    Then status 201
+    When method get
+    Then status 200
     Then match response == responeData.createUsersRespone
