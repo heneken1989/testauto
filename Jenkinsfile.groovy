@@ -6,7 +6,7 @@ pipeline {
                 sh ('mvn test')
             }
         }
-    }
+    
 
         stage('Report') {
             steps {
@@ -15,4 +15,4 @@ pipeline {
         
     }
     
-}
+}}
