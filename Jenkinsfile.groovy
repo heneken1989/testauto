@@ -8,7 +8,7 @@ stages {
       steps {
         
             script {
-                bat ("mvn test -DskipFailures=false -Dkarate.options='--tags @apiTest'")
+                bat ("mvn test")
             }
            
       }
