@@ -23,7 +23,7 @@ stages {
                     keepAll: true,  
                     reportDir: 'target/karate-reports/',
                     reportFiles: 'karate-timeline.html',
-                    reportName: 'KarateDemo Report'])
+                    reportName: 'Maru Report'])
             }           
       }
     }

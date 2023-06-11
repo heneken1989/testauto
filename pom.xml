@@ -21,7 +21,16 @@
             <artifactId>karate-junit5</artifactId>
             <version>${karate.version}</version>
             <scope>test</scope>
-        </dependency>		
+        </dependency>
+
+
+                <dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>cucumber-reporting</artifactId>
+    <version>5.7.5</version>
+</dependency>
+
+
     </dependencies>
 
     <build>
@@ -52,8 +61,13 @@
                 <configuration>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
-            </plugin>          
+            </plugin>
+
+                      
         </plugins>        
-    </build>       
+    </build>   
+
+
+        
     
 </project>

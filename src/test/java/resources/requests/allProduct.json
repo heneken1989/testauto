@@ -1,0 +1,16 @@
+{
+    "checkoutRequest": {
+       
+        "provinceName": "ho chi minh",
+        "districtName": "cwc",
+        "wardName": "cwwc",
+        "street": "cwcw",
+        "district": "1",
+        "name": "hien",
+        "email": "hien@gmail.com",
+        "phone": "1111",
+        "shipping": "1",
+        "deliver-note": "11111"
+            
+             }
+}

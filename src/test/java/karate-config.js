@@ -14,7 +14,11 @@ function fn() {
   } else if (env == 'e2e') {
     // customize
   }
-  config.baseUrl = "https://jsonplaceholder.typicode.com"
+  config.baseUrl = "http://localhost/2208M0/ProjectGroup4/public/test/checkout/"
+
+  karate.configure('logPrettyRequest',true);
+  karate.configure('logPrettyResponse',true);
+  karate.configure('headers', { Accept: 'application/json' });
   
   return config;
 }

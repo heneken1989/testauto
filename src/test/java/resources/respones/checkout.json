@@ -1,0 +1,24 @@
+{
+  "user_id": "#number",
+  "shipping_id": "#number",
+  "payment_content": "#string",
+  "created_at": "#string",
+  "order_date": "#string",
+  "updated_at": "#string",
+  "order_id": "#number",
+  "order_total": "#number",
+  "order_status": 7,
+  "orderdetail": [
+      {
+          "orderdetail_id":"#number",
+          "order_id": "#number",
+          "product_id": "#number",
+          "product_name": "#string",
+          "product_price": "#number",
+          "product_quantity": "#number",
+          "product_feeship": "#number",
+          "created_at": "#string",
+          "updated_at": "#string"
+      }
+  ]
+}

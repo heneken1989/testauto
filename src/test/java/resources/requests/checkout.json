@@ -1,0 +1,23 @@
+{
+  "checkoutRequest": {
+      "userID": 1,
+      "name" : "LE TRAN HUY HIEN",
+      "phone" : "0889382009",
+      "email" : "huyhien1901@gmail.com",
+      "street" : "15B Nguyễn Lương Bằng, P. Phú Thuận, Quận 7",
+      "province" : "202",
+      "district" : "2090",
+      "ward" : "22406",
+      "voucherCode" : null,
+      "shipping" : "Free_Ship",
+      "deliver-note" : null,
+      "provinceName" : "Hồ Chí Minh",
+      "dictrictName" : "Huyện Cần Giờ",
+      "warldName" : "Xã Tam Thôn Hiệp",
+      "shippingFee" : "34001",
+      "getsubtotal" : "37683",
+      "total_vnpay" : "71684"
+          
+           }
+
+}
