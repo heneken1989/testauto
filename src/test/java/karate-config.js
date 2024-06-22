@@ -14,7 +14,7 @@ function fn() {
   } else if (env == 'e2e') {
     // customize
   }
-  config.baseUrl = "http://localhost/2208M0/ProjectGroup4/public/test/checkout/"
+  config.baseUrl = "http://localhost:8081/api"
 
   karate.configure('logPrettyRequest',true);
   karate.configure('logPrettyResponse',true);
