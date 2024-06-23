@@ -8,5 +8,6 @@ Feature: User login
     Then status 200
     And match response contains { "user": { "user_id": "#notnull","avatar": "#? _ == null || _ != null","role": "#? _ == null || _ != null", "name": "#notnull", "code": "#notnull" }, "token": { "refeshToken": "#notnull", "accessToken": "#notnull" } }
     * def accessToken = response.token.accessToken
-    * print 'Access Token: ' + accessToken
+    * def userId = response.user.user_id
+    * karate.set('userId', userId)
     * karate.set('accessToken', accessToken)

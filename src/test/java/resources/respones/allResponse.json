@@ -1,0 +1,9 @@
+{
+  "studentClassResponse": {
+    "id": "#number",
+    "student": "#object",
+    "classforSubject": "#object",
+    "status":"#? _ == \"LIST\" || _ == \"UNPAID\" || _ == \"PAID\" || _ == \"WAITINGLIST\" ",
+    "createDate" : "#string" 
+  }
+}
